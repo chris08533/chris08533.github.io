@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+.grid 
+{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+width: 100vw;
+height: 50vh;
+max-width: 100%;
+font-family: sans-serif;
+}
+
+.gridfooter
+{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+width: 100vw;
+height: 10vh;
+max-width: 100%;
+font-family: sans-serif;
+}
+
+.item 
+{
+background: white;
+color: black;
+justify-content: center;
+}
+
+.header 
+{
+grid-column: 1 / 4;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #2e2e2e;
+color: white;
+width: 100vw;
+max-width: 100%;
+}
+
+h1 
+{
+font-size: 2rem;
+text-align: center;
+}
+
+.b 
+{
+background: #ddd;
+grid-column: 1 / 4;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media (max-width: 800px) 
+{
+.b 
+{
+        grid-column: 1 / 4;
+    }
+}
+
+.c 
+{
+grid-column: 1 / 4;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+@media (max-width: 800px) 
+{
+.c 
+{
+        grid-column: 1 / 4;
+    }
+}
+
+.content
+{
+grid-column: 1 / 4;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+margin: 20px;
+}
+
+@media (max-width: 800px) 
+{
+.content 
+{
+        grid-column: 1 / 4;
+    }
+}
+
+.dropdown
+{
+position: fixed;
+height: auto;
+width: auto;
+}
+
+.dropbtn
+{
+background-color: transparent;
+color: grey;
+padding: 16px 32px 16px 16px;
+font-size: 32px;
+border: none;
+max-height: 15vh;
+max-width: 15vw;
+}
+
+.dropdown-content
+{
+display: none;
+position: absolute;
+background-color: transparent;
+min-width: auto;
+z-index: 1;  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a 
+{
+background-color: transparent;
+mix-blend-mode: exclusion;
+padding: 4px 16px;
+text-decoration: none;
+display: block;
+color: darkgrey;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+background-color: rgb(119, 106, 106, .5);
+color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+{
+display: block;
+}
+
+/* photo grid */
+.card 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+  background: #353535;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  -webkit-text-stroke: black 2px;
+  
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+
+  background-size: cover;
+
+}
+
+.card:hover 
+{
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .5);
+  transition: box-shadow 0.3s ease;
+}
+
+.photo-grid 
+{
+  display: grid;
+  gap: 1rem;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) 
+{
+  .card-tall 
+  {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide 
+  {
+    grid-column: span 2 / auto;
+  }
+}
+
+.footer
+{
+  grid-column: 1/4;
+  background: rgb(119, 106, 106);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+}

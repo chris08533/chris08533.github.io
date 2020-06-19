@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="application-name" content="Simple CSS Grid">
+    <meta name="description" content="Simple CSS Grid">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src = "script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class = "grid">  
+      <div class = dropdown>
+        <button class = "dropbtn">=</button>
+            <div class = "dropdown-content">
+                <li><a id = "home" href = "index.html">home</a></li>
+                <li><a id = "contact" href = "contact.html">contact</a></li>
+            </div>
+      </div>
+
+      <div class = "item header" /*style = "background-image:url('pictures/board.png')"*/>
+        <h1>Christopher Hurley</h1>
+      </div>
+      
+      <div class = "item b">
+        <p>Inquisitive, energetic student with a focus on software development and network administration / devops : - )</p>
+      </div>
+      
+      <div class = "item c">
+        <h2>Projects</h2>
+      </div>
+    </div>
+
+    <!-- photo grid -->
+    <div class="photo-grid">
+      <a href = "java_weather_data_program.html">
+        <div class = "card card-tall card-wide" style = "background-image:url('pictures/weather.png')">Java Weather Data</div>
+      </a>
+      <a href = "arduino_midi_controller.html">
+        <div class = "card card-tall card-wide" style = "background-image:url('pictures/arduino.png')">Arduino MIDI Controller</div>
+      </a>
+      <a href = "hyperledger_composer_rest_api.html">
+        <div class = "card card-tall card-wide" style = "background-image:url('pictures/blockchain.png')">Hyperledger Composer REST API</div>
+      </a>
+    </div>
+    <div class="photo-grid">
+    <a href = "reaction_time_game.html">
+      <div class = "card card-tall card-wide" style = "background-image:url('pictures/clock.png')">Python Reaction Time</div>
+    </a>
+    <a href = "audio_frequency.html">
+      <div class = "card card-tall card-wide" style = "background-image:url('pictures/audio.png')">Python Audio Frequency</div>
+    </a>
+  </div>
+    <!-- fixed size containers -->
+    <div class = "fixed-size-container">
+      <div class = "fixed-size">h</div>
+      <div class = "fixed-size">o</div>
+      <div class = "fixed-size">w</div>
+      <div class = "fixed-size">d</div>
+      <div class = "fixed-size">y</div>
+
+    </div>
+
+    <!-- footer -->
+    <div class = "gridfooter">   
+      <div class = "footer">
+        <footer>
+          <p>hurleywchristopher@gmail.com</p>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+</html>
